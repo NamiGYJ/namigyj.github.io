@@ -1,0 +1,72 @@
+:root {
+    --bg-master: rgb(220,220,220);
+    --fg-master: rgb(34,34,34);
+
+    --fg-link: rgb(0, 102, 33);
+}
+
+body {
+    background-color: var(--bg-master);
+    color: var(--fg-master);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+}
+a:link, a:visited {
+    color: var(--fg-link);
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    color: var(--fg-link);
+    text-decoration: underline;
+    font-weight: bold;
+}
+code {
+    color: rgb(0,0,0);
+    font-weight: bold;
+    font-family: "Consolas";
+}
+
+.center{
+    text-align: center;
+}
+.txt {
+    margin-left:20%;
+    margin-right:20%;
+    text-align: justify;
+}
+.txt-left {
+    margin-top: 100px;
+    margin-right: 20%;
+    text-align: right;
+}
+
+
+#nav {
+    margin-right: 15%;
+    margin-left: 20%;
+    margin-top: 30px;
+    display: inline-flex;
+    border-bottom: 1px solid #333222;
+}
+
+.navl {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+b {
+    margin-right:35px;
+}
+
+#lol a, #lol a:link, #lol a:visited {
+    color: var(--fg-master);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    font-weight: none;
+}
+#lol {
+    position: fixed;
+    bottom:0;
+    right:0;
+}
