@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Awesome Presentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family-Fira+Sans);
+      @import url(https://fonts.googleapis.com/css?family-Fira+Mono);
+
+      .inverse {
+        background-color: #0b0b0b;
+        color: #eeefff;
+      }
+      body {
+        font-family: 'Fira Sans';
+        font-size: 20pt;
+      }
+      .mascot {
+        background-image: url("data/lain.png");
+        background-position: right 0px bottom -10px;
+        background-repeat: no-repeat;
+        background-size: 100px;
+      }
+      h1, h2, h3 {
+        font-family: 'Fira Sans';
+        font-weight: normal; // 400 ?
+      }
+      .remark-code, .remark-inline-code { font-family: 'Fira Mono'; }
+      .title {
+        display: block;
+        border-bottom: 1px solid black;
+      }
+      .mid-img img{
+        margin:10px;
+        max-width:50%;
+        max-height:50%;
+      }
+      .wide-img img {
+        margin:10px;
+        max-width:90%;
+      }
+      .portrait img {
+        margin-top:30px;
+        max-height: 500px;
+      }
+      .top-pad1 {
+        padding-top: 1em;
+      }
+      .img-2-align img {
+        max-width: 45%;
+        display: inline-block;
+        padding-left:10px;
+        padding-right:10px;
+      }
+      .img-height200 img {
+        max-height: 200px;
+      }
+      .portrait p,
+      .imgtxt p {
+        margin-bottom: 0px;
+      }
+      td, th {
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+      .proto2 img{
+        max-width:100%
+      }
+      // source : https://github.com/gnab/remark/blob/gh-pages/index.html
+      .left-column20 {
+        width:20%;
+        height: 92%;
+        float:left
+      }
+      .right-column75 {
+        width: 75%;
+        float:right;
+        padding-top: 1em;
+      }
+      .left-img60 img {
+        max-width: 60%;
+        float: left;
+        max-height: 90%;
+        padding-top:1em;
+      }
+      .right-column39 {
+        width: 39%;
+        float:right;
+      }
+      .left-column {
+        width: 20%;
+        height: 92%;
+        float: left;
+      }
+      .right-column {
+        width: 75%;
+        float: right;
+        padding-top: 1em;
+      }
+      .right-column img {
+        max-width: 75%;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+name: section
+layout: true
+class: center, middle, inverse
+
+--
+name: mascot
+layout: true
+class: mascot
+
+---
+template:section
+# INFOSEC
+
+Khaïm D. Berkane
+
+---
+
+template:section
+# """INFOSEC"""
+
+Khaïm D. Berkane
+
+---
+.title.right[\# user]
+## Moi
+* ~~expert~~ étudiant en ~~sécu~~ SE/PLT
+* bon sens/intuition
+* polyvalence
+* actualité
+???
+origine de l'exposé<br/>
+bon sens n'est pas pas vraiment bon sens (intuition)<br/>
+intuition = "code smell"<br/>
+polyvalence :
+* Pascal & vide -> comprendre vide nature pour comprendre vide de l'hô<br/>
+
+Bell Labs (Fucking Bell Labs) :
+* physique quantique pour créer les transistors
+* Bell Labs = Shannon (Info Th + Boolean EE + Crypto OTP)]
+
+---
+.title.right[\# warning]
+## Risques
+
+* paranoïa
+* culpabilité par association
+* "cracker" est un crime
+--
+
+<br/>
+* ennui
+
+---
+.title.right[\# gets]
+.center[## Sondage]
+
+???
+* Babbage, Lovelace
+* Shannon, Von neumann, Turing ?
+* Mr Robot ? Matrix ? Tron ? Blade Runner ?
+* SEL ? GitS ?
+* NieR Automata ? Deux ex Machina ?
+
+---
+.title.right[\#! /usr/bin/env]
+.center[![tor_0day_zerodium](data/news/tor-bounty.png)]
+* contexte conflictuel
+* Propriété du lien faible
+???
+Recruter les méchants
+Construction pont : les éléments sont immuables<br/>
+Ligne maginot
+
+---
+.title.right[\# who]
+.mid-img.center[![not really a hacker](data/ppl/hackerman.jpg)]
+
+---
+.title.right[\# who]
+.portrait.center[![Rijmen & Daemen](data/ppl/daemen-rijmen.jpg)]
+.center[Joan Daemen, Vincent Rijmen]
+
+---
+.title.right[\# who]
+.center.imgtxt.img-2-align.img-height200[
+    ![Kevin Mitnick](data/ppl/mitnick.jpg)
+    ![Michael calce](data/ppl/mafiaboy.jpg)
+]
+.center[Kevin Mitnick, Michael Calce]
+???
+Mitnick = 13 y/o SE (gratis bus), NORAD, DEC, full control(?) of Pacific Bell, prison*2
+
+Mafiaboy = 15y/o DDOS on Yahoo, Dell, eBay, CNN, Amazon, etc.
+
+src: [1] https://usa.kaspersky.com/resource-center/threats/top-ten-greatest-hackers
+
+--
+.center.imgtxt.img-2-align.img-height200[
+    ![Jonathan James](data/ppl/james.jpg)
+    ![Gary Mckinnon](data/ppl/mckinnon.jpg)
+]
+.center.imgtxt[Jonathan James, Gay Mckinnon]
+???
+James: Premier mineur (15-16),DoD, DTRA, ISS, officiers,
+NASA shutdown 3w, 1.7M$ données -> suicide
+
+McKinnon: 90s computers from USarmy & NASA
+src: [1]
+
+---
+.title.right[\# who]
+.justify[« Hackers built the Internet. Hackers made the Unix operating system what it is today. Hackers make the World Wide Web work. »]
+.wide-img.center[![arpanet team](data/ppl/arpanet2.jpg)]
+
+---
+.title.right[\# who]
+.portrait.center[![Denis Ritchie](data/ppl/ritchie.jpg)]
+
+--
+.center[Dennis Ritchie]
+
+???
+C, (Unix), ct attack sur M-209, Plan9, Inferno, Limbo, QED, etc.
+
+---
+.title.right[\# who]
+.portrait.center[![Kenneth Thompson](data/ppl/thompson.jpg)]
+
+--
+.center[Kenneth Thompson]
+???
+Unix, B, Plan9, Google, Go, QED, UTF-8, jeux d'échecs, etc.
+
+---
+.title.right[\# who]
+.portrait.center[![Linus Torvalds](data/ppl/torvalds.jpg)]
+
+--
+.center[Linus Torvalds]
+???
+* 16ans Minix "nothing serious"
+* git
+
+---
+.title.right[\# who]
+.portrait.center[![Richard Stallman](data/ppl/rms.jpg)]
+
+--
+.center[Our Lord and Savior, a.k.a Strange, Misguided Man]
+
+???
+* GNU [gcc, gnu-utils, emacs, gdb, gimp, gpg, GuixSD]
+* FSF
+* GPL
+
+---
+.title.right[\# who]
+
+To behave like a hacker, you have to believe that the thinking time of other hackers is precious — so much so that it's almost a <span style="color:red">moral duty for you to share information</span>, solve problems and <span style="color:red">then give the solutions away just so other hackers can solve new problems instead of having to perpetually re-address old ones</span>.
+
+---
+.title.right[\# history]
+.center[![Uber](data/news/uber_hack.png)
+        ![Yahoo01](data/news/yahoo_500m.png)]
+???
+* Vols de logins
+* Dictionnaires de mdp et bdds basés là dessus
+
+--
+.center[![Yahoo02](data/news/yahoo_1bn.png)]
+
+--
+.center[![Yahoo03](data/news/yahoo_3bn.png)]
+
+
+---
+.title.right[\# history]
+.center.top-pad1[![Twitter keeping your account secure](data/news/twitter_breach.png)]
+<br/>
+.center[[haveibeenpwned.com](https://haveibeenpwned.com/)]
+
+???
+les Leaks restent secrets
+Changement avec GDPR ?
+
+---
+.title.right[\# history]
+.center.wide-img[![Owning bad guys with Js botnet](data/news/based-botnet-chorrizo.png)]
+
+???
+**Don't use proxies**<br/>
+MitM :
+* DNS/http, proxy
+* 2DES MitM
+
+---
+.title.right[\# history]
+.center[![DDos Attack on DNS;](data/news/ddos01.png)
+        ![Large DDos attacks cause outages](data/news/ddos02.png)]
+Mirai: 660Gbps ~ 1Tbps
+
+???
+(4Tbps??)
+pas vérifié, mais Mirai = record ?
+
+---
+template:section
+.center.top-pad1[![Anna-senpai(Shimoneta)](data/ppl/anna-senpai_avi.jpg)]
+
+---
+.title.right[\# history]
+    .left-img60[![Mirai's thread](data/news/mirai_post.jpg)]
+    .right-column39[
+- malware = marché
+- création d'une demande
+    ]
+
+---
+.title.right[\# history]
+.center[![heartbleed bug](data/news/heartbleed.png)]
+
+openssl commit : [96db9023b881d7cd9f379b0c154650d6c108e9a3](https://github.com/openssl/openssl/commit/96db9023b881d7cd9f379b0c154650d6c108e9a3)
+???
+
+---
+.title.right[\# history]
+.center[![accoustic SSA](data/news/attack_a.png)
+        ![timing attack](data/news/attack_t.png)]
+
+---
+.title.right[\# history]
+.center[![ATM1](data/news/ATM01.png)
+        ![ATM2](data/news/ATM02.png)]
+
+???
+backdoors = portes dérobés<br>
+* compilateur C
+* BIOS/bootloader
+* algo crypto
+
+---
+.title.right[\# history]
+.center[![NSA How](data/news/NSA01.png)
+        ![FairView](data/news/NSA_FAIRVIEW.png)
+        ![PRISM](data/news/NSA_PRISM.png)]
+???
+>muh complot
+>NSA & TOR network
+
+États/armées plus grand contributeurs (dans les deux sens)
+
+---
+.title.right[\# history]
+.center[![NSA's Orange hack](data/news/NSA_Orange.png)
+        ![GCHQ's Belgacom hack](data/news/GCHQ_Belgacom.png)
+        ![CIA Vault7 Fr elections](data/news/CIA_Vault7_FR.png)
+        ![Spies in MMO](data/news/NSA_MMO.png)
+        ]
+
+---
+.title.right[\# history]
+
+.center[![Comey](data/news/comey_twt.png)]
+
+« Information flow security »
+
+???
+[further reading](https://www.technologyreview.com/s/604286/james-comeys-twitter-security-problem-is-your-problem-too/)
+
+---
+.title.right[\# history]
+
+
+.center[![Spectre Meltdown](data/news/specmel.png)]
+
+---
+.title.right[\# AMS101]
+## Syntax
+* `mov src, dest    ; AT&T, GAS`
+* `mov dest, src    ; intel, nasm`
+
+## size
+|  8b   |  16b |  32b  | 64b   |
+|-------|------|-------|-------|
+| al,ah | ax   | eax   | rax   |
+| byte  | word | dword | qword |
+| insb  | insw | insl  | insq  |
+
+---
+.title.right[\# ASM101]
+## Registers
+* ax, bx, *cx*, dx
+* sp, bp
+* eip/rip
+
+## Little Endian
+`int a = 0x01020304`
+**=>** <br/>`... 0x04 0x03 0x02 0x01 ...`
+
+---
+.title.right[\# ASM101]
+## EFlags Register
+CF, ZF, SF, OF
+
+## instructions /= PIC
+* cmp, test
+* jmp, j[n]e, j[n]z
+* push, pop
+* call -> ret
+* enter -> leave
+
+---
+.title.right[\# SFO101]
+.center[![CPU LAYOUT](data/asm/cpu_layout.png)]
+
+???
+* Cache
+* µOPs
+* branching
+
+---
+.title.right[\# Spectre]
+```c
+struct array {
+    unsigned long length;
+    unsigned char data[];
+}
+
+struct array *a;
+u64 untrusted_offset;
+
+if(untrusted_offset < a->length){
+    u8 value = a->data[untrusted_offset];
+    // ..
+}
+```
+
+---
+.title.right[\# Spectre]
+```c
+struct array *a;
+struct array *b; // size 0x400
+u64 untrusted_offset;
+
+if(untrusted_offset < a->length) {
+    u8 value = a->data[untrusted_offset];
+    u64 index = 0x200 + ((value & 1) * 0x100 );
+    if(index < b->length)
+        u8 val2 = b[index];
+}
+```
+
+---
+template:section
+
+.center[![winamp heapoverflow](data/asm/winamp_exploit.jpg)]
+
+---
+.title.right[\# BOF]
+
+```c
+int target = 0;
+char buffer[4];
+
+gets(buffer);
+
+if(!target)
+    puts("everything is fine");
+else
+    puts("not a bug, i-it's a feature!");
+```
+
+---
+.title.right[\# BOF]
+
+[godbolt.org](https://godbolt.org)
+
+---
+.title.right[\# ASM102]
+.left-column[
+```
+ 0x02  push eax
+ 0x04  mov [esp], 0x28
+ 0x0a  call 0xb3 <print>
+ 0x0c  pop %ebx
+
+ 0xb3  ...
+ 0xb8  ret
+
+
+eip: 0x02   eax: 0x0a
+esp: 0xf0   ebx: 0x00
+```
+]
+
+.right-column[![stack0](data/asm/stack0.png)]
+
+---
+.title.right[\# ASM102]
+.left-column[
+```
+>0x02  push eax
+ 0x04  mov [esp], 0x28
+ 0x0a  call 0xb3 <print>
+ 0x0c  pop %ebx
+
+ 0xb3  ...
+ 0xb8  ret
+
+
+eip: 0x04   eax: 0x0a
+esp: 0xf2   ebx: 0x00
+```
+]
+
+.right-column[![stack1](data/asm/stack1.png)]
+
+---
+template:section
+.left[
+```
+    push $arg := add esp, $size
+                 mov [esp], $arg
+```
+]
+
+---
+.title.right[\# ASM102]
+.left-column[
+```
+ 0x02  push eax
+>0x04  mov [esp], 0x28
+ 0x0a  call 0xb3 <print>
+ 0x0c  pop %ebx
+
+ 0xb3  ...
+ 0xb8  ret
+
+
+eip: 0x0a   eax: 0x0a
+esp: 0xf2   ebx: 0x00
+```
+]
+
+.right-column[![stack2](data/asm/stack2.png)]
+
+---
+.title.right[\# ASM102]
+.left-column[
+```
+ 0x02  push eax
+ 0x04  mov [esp], 0x28
+>0x0a  call 0xb3 <print>
+ 0x0c  pop %ebx
+
+ 0xb3  ...
+ 0xb8  ret
+
+
+eip: 0xb3   eax: 0x0a
+esp: 0xf4   ebx: 0x00
+```
+]
+
+.right-column[![stack3](data/asm/stack3.png)]
+
+---
+template:section
+.left[
+```
+      call $arg := push eip
+                   jmp $arg
+
+      jmp $arg  := mov eip, $arg
+```
+]
+
+
+---
+.title.right[\# ASM102]
+.left-column[
+```
+ 0x02  push eax
+ 0x04  mov [esp], 0x28
+ 0x0a  call 0xb3 <print>
+ 0x0c  pop %ebx
+
+>0xb3  ...
+ 0xb8  ret
+
+
+eip: 0xb8   eax: 0x0a
+esp: 0xf4   ebx: 0x00
+```
+]
+
+.right-column[![stack3](data/asm/stack3.png)]
+
+---
+.title.right[\# ASM102]
+.left-column[
+```
+ 0x02  push eax
+ 0x04  mov [esp], 0x28
+ 0x0a  call 0xb3 <print>
+ 0x0c  pop %ebx
+
+ 0xb3  ...
+>0xb8  ret
+
+
+eip: 0x0c   eax: 0x0a
+esp: 0xf2   ebx: 0x00
+```
+]
+
+.right-column[![stack2](data/asm/stack2.png)]
+
+---
+template:section
+.left[
+```
+    ret := pop eip
+```
+]
+
+---
+.title.right[\# ASM102]
+.left-column[
+```
+ 0x02  push eax
+ 0x04  mov [esp], 0x28
+ 0x0a  call 0xb3 <print>
+>0x0c  pop %ebx
+
+ 0xb3  ...
+ 0xb8  ret
+
+
+eip: 0x0e   eax: 0x0a
+esp: 0xf0   ebx: 0x28
+```
+]
+
+.right-column[![stack0](data/asm/stack0.png)]
+
+---
+template:section
+
+Exploiting call/ret for control flow
+
+[microcorruption.org](https://microcorruption.org)
+
+---
+template:section
+
+executing payloads to execute payloads
+
+---
+.title.right[\# stack2]
+
+```c
+int main(int argc, char **argv) {
+    char buffer[64];
+    gets(buffer);
+}
+```
+
+---
+.title.right[\# stack2]
+
+.center[![protostar segfault](data/asm/protostar01.png)]
+
+---
+.title.right[\# stack2]
+
+.proto2[![protostar shellcode](data/asm/protostar02.png)]
+
+```
+[padding:76][addr_ret:4][Nopsled:256][shellcode:*]
+```
+
+---
+.title.right[\# reward]
+
+.center[![leak](data/news/celeb_nudes00.png)
+        ![leak](data/news/celeb_nudes01.png)
+        ![leak](data/news/celeb_nudes02.png)]
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
